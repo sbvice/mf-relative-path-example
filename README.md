@@ -15,7 +15,7 @@ Module Fedaration can be configured to refer to remotes using a relative path.  
 # The TypeScript Gap
 Module federation has a really amazing feature that can resolve remote module Typescript types at build time.  The main issue is that when using a relative path to specifiy the location of the remote module `manifest.json` file, the DTS plugin does not know the correct base url to use.  This is because the base url is not known at build time.  I've [filed a feature request to resolve this](https://github.com/module-federation/core/issues/2963), and [implemented a potential solution](https://github.com/module-federation/core/pull/3042) that was recently closed as "won't do." Hopefully this repository is a good enough reproduction to warrant the feature request.
 
-# Directoryy Structure
+# Directory Structure
 There are 3 apps in this repository under the `/packages` folder.
 
 - *host*: A module federation consumer application
