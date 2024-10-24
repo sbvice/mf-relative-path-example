@@ -1,0 +1,8 @@
+node_modules/
+
+# package specific files
+**/node_modules/
+**/dist/
+
+# IDE
+.vscode/

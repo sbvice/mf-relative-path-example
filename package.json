@@ -1,0 +1,11 @@
+{
+  "name": "root",
+  "private": true,
+  "workspaces": [
+    "packages/host",
+    "packages/module-server",
+    "packages/modules/*"
+  ],
+  "dependencies": {},
+  "devDependencies": {}
+}
