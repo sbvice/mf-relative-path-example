@@ -22,12 +22,12 @@ There are 3 apps in this repository under the `/packages` folder.
 - *module-server*: A simple express application that serves the remote modules
 - *modules/buttons*: A module federation provider that exposes a `ConfettiButton` component.
 
-# Install and running the example
+# Installing and running the example
 
 1. Clone the repository
 ```bash
-git clone https://github.com/sbvice/relative-path-example.git
-cd relative-path-example
+git clone https://github.com/sbvice/mf-relative-path-example.git
+cd mf-relative-path-example
 ```
 
 2. Install the dependencies
@@ -52,6 +52,12 @@ npm run start -w packages/host
 ```
 
 6. Open [http://localhost:3000](http://localhost:3000) to view the demo application in the browser.
+
+
+
+
+https://github.com/user-attachments/assets/11bdabf8-21d6-48af-8c82-23cb321b3d3a
+
 
 
 # Reproducing the bug
