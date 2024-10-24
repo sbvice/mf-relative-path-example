@@ -3,7 +3,7 @@ This repository is an example of how relative paths can be used to import remote
 
 Consider the following diagram that shows how two routes `/app` and `/modules` get routed to different vpns based on the base url specifying `dev.example.com` or `prod.example.com`.
 
-[Relative remote diagram]("./relative-remote-diagram.png")
+![Relative remote diagram](relative-remote-diagram.png)
 
 In this example, both the remote modules, and the host application are served from the same domain, however that domain is not static.  Additionally both the host application and the remote modules can graduate to various environments, such as `dev`, `stage`, `prod`, `gov`, etc.  They graduate to these environments independent from eachother, so a remote that is in active development will need to be tested against the application across all environments and vice-versa.
 
