@@ -13,7 +13,7 @@ This repository is configured to demonstrate a host application and a static ass
 Module Federation can be configured to refer to remotes using a relative path.  This allows the host application to be agnostic to the environment that the remote modules are in.  The host application can request the remote modules using a relative path, such as `/modules/buttons`.  The module server will then serve the remote modules from the correct location based on the base url.
 
 # The TypeScript Gap
-Module federation has a really amazing feature that can resolve remote module TypeScript types at build time.  The main issue is that when using a relative path to specify the location of the remote module `manifest.json` file, the DTS plugin does not know the correct base url to use.  This is because the base url is not known at build time.  I've [filed a feature request to resolve this](https://github.com/module-federation/core/issues/2963), and [implemented a potential solution](https://github.com/module-federation/core/pull/3042) that was recently closed as "won't do." Hopefully this repository is a good enough reproduction to warrant the feature request.
+Module federation has a really amazing feature that can resolve remote module TypeScript types at build time.  The main issue is that when using a relative path to specify the location of the remote module `manifest.json` file, the DTS plugin does not know the correct base url to use.  This is because the base url is not known at build time.  I've [filed a feature request to resolve this](https://github.com/module-federation/core/issues/2963), and [implemented a potential solution](https://github.com/module-federation/core/pull/3042).
 
 # Directory Structure
 There are 3 apps in this repository under the `/packages` folder.
@@ -22,7 +22,7 @@ There are 3 apps in this repository under the `/packages` folder.
 - *module-server*: A simple express application that serves the remote modules
 - *modules/buttons*: A module federation provider that exposes a `ConfettiButton` component.
 
-# Install and running the example
+# Installing and running the example
 
 1. Clone the repository
 ```bash
@@ -52,6 +52,12 @@ npm run start -w packages/host
 ```
 
 6. Open [http://localhost:3000](http://localhost:3000) to view the demo application in the browser.
+
+
+
+
+https://github.com/user-attachments/assets/11bdabf8-21d6-48af-8c82-23cb321b3d3a
+
 
 
 # Reproducing the bug
