@@ -76,3 +76,15 @@ error TS2307: Cannot find module 'buttons/ConfettiButton' or its corresponding t
 
 Found 1 error in src/App.tsx:2
 ```
+
+# Verifying the new `remoteBasePath` DTS config feature
+I've created a [fork of the module federation core repository](https://github.com/sbvice/core) that implements the new `remoteBasePath` DTS config feature.  This feature is not yet merged into the main repository, but it can be used to verify that the feature works as expected.
+
+To verify the feature:
+1. Clone the forked repository
+2. install and build the project
+3. symlink `/node_modules/module-federation` to the cloned repository `/packages` subdirectory.
+4. checkout the `fix` branch of this repository and run the host application at least once to pull the types.
+5. Run the typecheck command again and verify that the warning is no longer present.
+
+You now will actually see a bunch of other type errors now related to the `ConfettiButton` component which is a good thing! It indicates our types are being resolved correctly.
