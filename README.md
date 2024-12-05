@@ -78,7 +78,7 @@ Found 1 error in src/App.tsx:2
 ```
 
 # Verifying the new `remoteBasePath` DTS config feature
-I've created a [fork of the module federation core repository]([https://github.com/sbvice/core](https://github.com/sbvice/module-federation-core/tree/remote-path-base-dts)) that implements the new `remoteBasePath` DTS config feature.  This feature is not yet merged into the main repository, but it can be used to verify that the feature works as expected.
+I've created a [fork of the module federation core repository](https://github.com/sbvice/module-federation-core/tree/remote-path-base-dts) that implements the new `remoteBasePath` DTS config feature.  This feature is not yet merged into the main repository, but it can be used to verify that the feature works as expected.
 
 To verify the feature:
 1. Clone the forked repository
